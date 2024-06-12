@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/login.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">S.R.L.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carrucel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carrucel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carrucel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+      
+      
+
+      <div class="container">
+        <h1 class="text-center my-4">Ingreso de Empleados</h1>
+        <form id="reservaForm">
+            <div class="form-group">
+                <label for="ingreso">Fecha de Ingreso:</label>
+                <input type="date" class="form-control" id="ingreso" name="ingreso">
+            </div>
+            <div class="form-group">
+                <label for="egreso">Fecha de Egreso:</label>
+                <input type="date" class="form-control" id="egreso" name="egreso">
+            </div>
+            <div class="form-group">
+                <label for="camas">Puesto:</label>
+                <select class="form-control" id="camas" name="camas">
+                    <option value="rey">Gerente</option>
+                    <option value="reina">Supervisor</option>
+                    <option value="simple">Operario</option>
+                    <option value="doble">Administrativo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="fumador_si" name="fumador" value="si">
+                    <label class="form-check-label" for="fumador_si">Fumador</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="fumador_no" name="fumador" value="no" checked>
+                    <label class="form-check-label" for="fumador_no">No Fumador</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Beneficios:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="vOceano" id="vOceano">
+                    <label class="form-check-label" for="vOceano">Seguro Médico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="sTarde" id="sTarde">
+                    <label class="form-check-label" for="sTarde">Descuentos</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="mBar" id="mBar">
+                    <label class="form-check-label" for="mBar">Bonos</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pago">Forma de Pago:</label>
+                <select class="form-control" id="pago" name="pago">
+                    <option value="visa">Efectivo</option>
+                    <option value="mastercard">Transferencia Bancaria</option>
+                    <option value="amex">Cheque</option>
+                    <option value="discover">Tarjeta de Crédito</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tarjeta">Número de Cuenta:</label>
+                <input type="text" class="form-control" id="tarjeta" name="tarjeta" maxlength="16">
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="mes">Mes:</label>
+                    <select class="form-control" id="mes" name="mes">
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <!-- Agrega los demás meses -->
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="ano">Año:</label>
+                    <select class="form-control" id="ano" name="ano">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <!-- Agrega los demás años -->
+                    </select>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <button type="button" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </form>
+        <div id="message" class="message"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('reservaForm');
+  const nombreInput = document.getElementById('nombre');
+  const messageDiv = document.getElementById('message');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      const nombre = nombreInput.value.trim();
+      messageDiv.textContent = `${nombre}, su reserva está hecha.`;
+      form.reset();
+    } else {
+      messageDiv.textContent = 'Por favor, complete todos los campos obligatorios.';
+    }
+  });
+});
+
+function validateForm() {
+  let isValid = true;
+  const ingreso = document.getElementById('ingreso').value;
+  const egreso = document.getElementById('egreso').value;
+  const camas = document.getElementById('camas').value;
+  const fumadorSi = document.getElementById('fumador_si').checked;
+  const fumadorNo = document.getElementById('fumador_no').checked;
+  const pago = document.getElementById('pago').value;
+  const tarjeta = document.getElementById('tarjeta').value;
+  const mes = document.getElementById('mes').value;
+  const ano = document.getElementById('ano').value;
+
+  if (!ingreso) {
+    isValid = false;
+  }
+
+  if (!egreso) {
+    isValid = false;
+  } else if (new Date(egreso) < new Date(ingreso)) {
+    isValid = false;
+  }
+
+  if (!camas) {
+    isValid = false;
+  }
+
+  if (!fumadorSi && !fumadorNo) {
+    isValid = false;
+  }
+
+  if (!pago) {
+    isValid = false;
+  }
+
+  const tarjetaRegex = /^\d{16}$/;
+  if (!tarjeta || !tarjetaRegex.test(tarjeta)) {
+    isValid = false;
+  }
+
+  if (!mes) {
+    isValid = false;
+  }
+
+  if (!ano) {
+    isValid = false;
+  }
+
+  return isValid;
+}
+        </script>
+    </div>
+
+    
+<div class="footer"> 
+        
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Enlaces útiles</h5>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Dirección: Calle Principal, Ciudad, País</p>
+          <p>Teléfono: +123456789</p>
+          <p>Email: infoxample.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12  text-white py-2">
+          
+        </div>
+      </div>
+    </div>
+
+ 
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

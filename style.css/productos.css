@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la barra de navegación */
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para las tarjetas de producto */
+.arriba {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.abajo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 350px; /* Altura fija de 350px */
+    object-fit: cover;
+}

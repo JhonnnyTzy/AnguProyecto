@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2a9d8f;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #e9c46a !important;
+}
+
+.nav-link.active {
+    background-color: #e76f51;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Estilos adicionales para el carrusel */
+.carousel-inner img {
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2a9d8f;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #2a9d8f;
+}
+
+.carousel-indicators .active {
+    background-color: #e76f51;
+}
